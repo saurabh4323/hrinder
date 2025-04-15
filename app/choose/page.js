@@ -234,8 +234,8 @@ export default function PreferencePage() {
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  With "Open to All" selected, we will show you profiles across
-                  all genders and orientations
+                  With &quot;Open to All&quot; selected, we will show you
+                  profiles across all genders and orientations
                 </p>
               </div>
             )}
