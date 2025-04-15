@@ -107,7 +107,7 @@ export default function HomePage() {
             <h3 className="text-xl font-bold mb-2">Inclusive Profiles</h3>
             <p className="text-gray-300">
               Customize your profile with pronouns, gender identity, and
-              orientation. Express yourself authentically whether you're LGBTQ+
+              orientation. Express yourself authentically whether you are LGBTQ+
               or straight.
             </p>
           </div>
