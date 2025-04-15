@@ -25,11 +25,12 @@ export default function HomePage() {
                 <span className="bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
                   Perfect Match
                 </span>{" "}
-                in the LGBTQ+ Community
+                for Everyone
               </h1>
               <p className="text-lg text-gray-300 mb-8">
-                Hrinder is a safe, inclusive platform designed for the LGBTQ+
-                community to connect, date, and build meaningful relationships.
+                Hrinder is a safe, inclusive platform designed for everyone -
+                LGBTQ+ and straight individuals alike - to connect, date, and
+                build meaningful relationships in a respectful environment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 rounded-full text-white font-medium text-lg hover:opacity-90 transition flex items-center justify-center gap-2">
@@ -103,7 +104,8 @@ export default function HomePage() {
             <h3 className="text-xl font-bold mb-2">Inclusive Profiles</h3>
             <p className="text-gray-300">
               Customize your profile with pronouns, gender identity, and
-              orientation. Express yourself authentically.
+              orientation. Express yourself authentically whether you're LGBTQ+
+              or straight.
             </p>
           </div>
 
@@ -113,8 +115,9 @@ export default function HomePage() {
             </div>
             <h3 className="text-xl font-bold mb-2">Smart Matching</h3>
             <p className="text-gray-300">
-              Our algorithm understands the nuances of LGBTQ+ dating and helps
-              you find compatible connections.
+              Our algorithm understands dating preferences across all
+              orientations and helps you find compatible connections based on
+              what matters to you.
             </p>
           </div>
 
@@ -124,8 +127,8 @@ export default function HomePage() {
             </div>
             <h3 className="text-xl font-bold mb-2">Safe Communication</h3>
             <p className="text-gray-300">
-              Secure messaging with privacy controls, allowing you to connect
-              safely within our community.
+              Secure messaging with privacy controls, allowing everyone to
+              connect safely in a respectful, inclusive environment.
             </p>
           </div>
         </div>
@@ -143,8 +146,8 @@ export default function HomePage() {
               Ready to find meaningful connections?
             </h2>
             <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-              Join thousands of LGBTQ+ individuals who have found friendship,
-              love, and community on Hrinder.
+              Join thousands of people who have found friendship, love, and
+              community on Hrinder - an inclusive space for everyone.
             </p>
             <button className="bg-white text-purple-700 px-8 py-3 rounded-full text-lg font-medium hover:bg-white/90 transition">
               Start Your Journey Today
