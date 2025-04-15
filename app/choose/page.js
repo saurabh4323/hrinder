@@ -17,7 +17,7 @@ export default function PreferencePage() {
       <div className="pt-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center" style={{ marginTop: "80px" }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-2">
-            Tell us what you're{" "}
+            Tell us what you are{" "}
             <span className="bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
               looking for
             </span>
@@ -234,7 +234,7 @@ export default function PreferencePage() {
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  With "Open to All" selected, we'll show you profiles across
+                  With "Open to All" selected, we will show you profiles across
                   all genders and orientations
                 </p>
               </div>

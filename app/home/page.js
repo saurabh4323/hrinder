@@ -17,7 +17,10 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-blue-900 text-white">
       {/* Hero Section */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-12 py-12">
+        <div
+          className="flex flex-col md:flex-row items-center gap-12 py-12"
+          style={{ marginTop: "-40px" }}
+        >
           <div className="md:w-1/2">
             <div className="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -48,7 +51,7 @@ export default function HomePage() {
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="relative bg-black/30 backdrop-blur-sm rounded-3xl border border-white/10 p-6 shadow-xl">
                 <img
-                  src="/api/placeholder/500/300"
+                  src="https://i.pinimg.com/736x/b0/3e/46/b03e46471e541f6edcdf063e34d4b06e.jpg"
                   alt="Diverse couples using the Hrinder app"
                   className="w-full h-auto rounded-lg mb-6"
                 />

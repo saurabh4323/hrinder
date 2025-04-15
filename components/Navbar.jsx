@@ -56,10 +56,16 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <button className="bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-2 rounded-full text-white font-medium mr-3 hover:opacity-90 transition">
+              <button
+                className="bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-2 rounded-full text-white font-medium mr-3 hover:opacity-90 transition"
+                onClick={() => (window.location.href = "/register")}
+              >
                 Sign Up
               </button>
-              <button className="bg-white/10 px-4 py-2 rounded-full text-white font-medium border border-white/20 hover:bg-white/20 transition">
+              <button
+                className="bg-white/10 px-4 py-2 rounded-full text-white font-medium border border-white/20 hover:bg-white/20 transition"
+                onClick={() => (window.location.href = "/register")}
+              >
                 Log In
               </button>
             </div>
