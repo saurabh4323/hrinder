@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Eye, EyeOff, Mail, Lock, User, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import axios from "axios";
 
 export default function AuthPages() {
   const [isLogin, setIsLogin] = useState(false);
@@ -10,7 +11,7 @@ export default function AuthPages() {
     name: "",
     email: "",
     password: "",
-    phoneNumber: "",
+    phone: "",
     privacyPolicy: false,
     termsConditions: false,
     ageVerification: false,
@@ -25,12 +26,22 @@ export default function AuthPages() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(
-      isLogin ? "Login form submitted" : "Signup form submitted",
-      form
-    );
+    console.log("Form Data Submitted:", form); // Log form data before sending
+
+    try {
+      const res = await axios.post("/api/register", form);
+      console.log("Server Response:", res.data);
+
+      if (res.status === 201) {
+        window.location.href = "/choose"; // Redirect only on success
+      } else {
+        console.error("Error creating user:", res.data.message);
+      }
+    } catch (err) {
+      console.error("Request failed:", err.response?.data || err.message);
+    }
   };
 
   return (
@@ -168,9 +179,9 @@ export default function AuthPages() {
                     </div>
                     <input
                       type="tel"
-                      id="phoneNumber"
-                      name="phoneNumber"
-                      value={form.phoneNumber}
+                      id="phone"
+                      name="phone"
+                      value={form.phone}
                       onChange={handleChange}
                       className="bg-white/10 border border-white/10 text-white rounded-lg block w-full pl-10 p-2.5 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none"
                       placeholder="+1 (123) 456-7890"
